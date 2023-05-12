@@ -1,16 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
+import Main from './Componants/Main'
+import Home from './Componants/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>,
+      children: [
+        {
+          path: '/',
+          element: <Home></Home>
+        }
+      ]
+    }
+  ])
 
   return (
     <div className="App">
-      <h1>Football League Player</h1>
-      <h1>Football League Player</h1>
-      <h1>Football League Player</h1>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   )
 }
