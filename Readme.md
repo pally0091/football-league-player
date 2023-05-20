@@ -4,4 +4,4 @@
 
 #Fooball League Countries info
 
-UiKit support
+TailWind CSS support
