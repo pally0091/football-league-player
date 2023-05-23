@@ -30,7 +30,7 @@ function App() {
         {
           path: '/leagues',
           element: <LeagueList></LeagueList>,
-          
+          loader: ()=> fetch ('https://www.thesportsdb.com/api/v1/json/3/all_leagues.php')
         },
         {
           path: '/teams/:id',

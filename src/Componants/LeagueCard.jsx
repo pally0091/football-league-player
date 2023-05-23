@@ -15,10 +15,10 @@ const LeagueCard = ({league}) => {
                     <h4 className='text-lg'>Type :  {strGender}</h4>
                     <h4 className='text-xl font-semibold'>League for : {strCountry}</h4>
                     <h4>{strSport} Team</h4>
-                    <Link to={`/teams/${strLeague}`}>Teams in League</Link>
+                    <Link className='hover:text-red-600 hover:underline'  to={`/teams/${strLeague}`}>Teams in this League</Link>
                 </div>
             </div>
-            <h4 className='text-justify p-2'>{strDescriptionEN}</h4>
+            {/* <h4 className='text-justify p-2'>{strDescriptionEN}</h4> */}
         </div>
     );
 };

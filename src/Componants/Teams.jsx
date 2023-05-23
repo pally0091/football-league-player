@@ -9,7 +9,7 @@ const Teams = () => {
     return (
         <div>
             <h4 className='text-center text-3xl font-semibold'>{ teams?.length} teams in this league</h4>
-            <div>
+            <div className=' grid grid-cols-4 p-3 my-10 gap-4'>
                 {
                     teams?.map(team => (
                         <Team
