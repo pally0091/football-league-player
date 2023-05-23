@@ -17,6 +17,9 @@ a.active{
 #title{
   text-shadow: 3px 3px 5px greenyellow;
 }
+.league-name{
+  text-shadow: 2px 2px 2px white;
+}
 .underline-on-hover {
   position: relative;
 }

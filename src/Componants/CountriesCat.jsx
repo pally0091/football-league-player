@@ -11,7 +11,7 @@ const CountriesCat = () => {
         }
         fetchData();
     }, []);
-    console.log(countries)
+    // console.log(countries)
     return (
         <div className='sticky overflow-scroll overflow-y-hidden flex flex-row items-center'>
             {
