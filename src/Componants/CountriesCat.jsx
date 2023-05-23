@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 const CountriesCat = () => {
     const [countries, setCountries] = useState();
     useEffect(() => {
-        fetch('https://www.thesportsdb.com/api/v1/json/3/all_countries.php')
-            .then(res => res.json())
-            .then(data => setCountries(data?.countries))
-        
+        async function fetchData() {
+            const response = await fetch('https://www.thesportsdb.com/api/v1/json/3/all_countries.php');
+            const data = await response.json();
+            setCountries(data?.countries);
+        }
+        fetchData();
     }, []);
     console.log(countries)
     return (
         <div className='sticky overflow-scroll overflow-y-hidden flex flex-row items-center'>
             {
-                countries.map(country => (
+                countries?.map(country => (
                     <Link
                         key={country?.name_en}
                         to={`/${country?.name_en}`}
