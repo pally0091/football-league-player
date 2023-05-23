@@ -6,7 +6,7 @@ import LeagueCard from './LeagueCard';
 const CountryList = () => {
     const data = useLoaderData();
     const listLeagues = data?.countries;
-    console.log(listLeagues)
+    // console.log(listLeagues)
     return (
         <div className=''>
             <div className='sticky'>

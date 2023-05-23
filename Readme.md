@@ -1,7 +1,7 @@
-#Football League Info
+#sports League Info
 
-#Fooball players info
+#sports players info
 
-#Fooball League Countries info
+#sports League Countries info
 
 TailWind CSS support

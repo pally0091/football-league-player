@@ -5,7 +5,7 @@ import Team from './Team';
 const Teams = () => {
     const data = useLoaderData();
     const teams = data?.teams;
-    console.log(teams);
+    // console.log(teams);
     return (
         <div>
             <h4 className='text-center text-3xl font-semibold'>{ teams?.length} teams in this league</h4>
