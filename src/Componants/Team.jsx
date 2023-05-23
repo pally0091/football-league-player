@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Team = () => {
+const Team = ({ team }) => {
+    const { strTeam, strTeamShort, intFormedYear, strCountry } = team;
+    console.log(strTeam)
     return (
         <div>
             team 

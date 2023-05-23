@@ -12,15 +12,18 @@ const CountryList = () => {
             <div className='sticky'>
                 <CountriesCat></CountriesCat>
             </div>
-            <div className='mt-5 grid grid-cols-2 gap-3 p-10'>
-                {
-                    listLeagues?.map(league => (
-                        <LeagueCard
-                            key={league?.idLeague}
-                            league={league}
-                        ></LeagueCard>
-                    ))
-                }
+            <div>
+                <h3 className='text-center text-3xl font-semibold'>{ listLeagues?.length} Leagues in this Country</h3>
+                <div className='mt-5 grid grid-cols-2 gap-3 p-10'>
+                    {
+                        listLeagues?.map(league => (
+                            <LeagueCard
+                                key={league?.idLeague}
+                                league={league}
+                            ></LeagueCard>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     );

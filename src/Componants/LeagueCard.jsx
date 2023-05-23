@@ -12,8 +12,8 @@ const LeagueCard = ({league}) => {
                 </div>
                 <div className='w-1/2 p-4'>
                     
-                    <h4 className='text-lg'>Type:  {strGender}</h4>
-                    <h4 className='text-xl font-semibold'>League for: {strCountry}</h4>
+                    <h4 className='text-lg'>Type :  {strGender}</h4>
+                    <h4 className='text-xl font-semibold'>League for : {strCountry}</h4>
                     <h4>{strSport} Team</h4>
                     <Link to={`/teams/${strLeague}`}>Teams in League</Link>
                 </div>
