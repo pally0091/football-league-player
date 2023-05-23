@@ -3,6 +3,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import Main from './Componants/Main'
 import Home from './Componants/Home'
+import CountryList from './Componants/CountryList'
+import LeagueList from './Componants/LeagueList'
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +15,14 @@ function App() {
         {
           path: '/',
           element: <Home></Home>
+        },
+        {
+          path: '/countries',
+          element: <CountryList></CountryList>
+        },
+        {
+          path: '/leagues',
+          element: <LeagueList></LeagueList>
         }
       ]
     }
