@@ -18,7 +18,12 @@ function App() {
         },
         {
           path: '/countries',
-          element: <CountryList></CountryList>
+          element: <CountryList></CountryList>,
+          // loader: ()=> fetch('https://www.thesportsdb.com/api/v1/json/3/all_countries.php')
+        },
+        {
+          path: '/:id',
+          element : <CountryList></CountryList>
         },
         {
           path: '/leagues',
