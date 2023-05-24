@@ -5,7 +5,7 @@
 body{
   background-image: linear-gradient(to bottom left, #00b7ff, #63ff33, #42006e);
   font-family: 'Crimson Text', serif;
-  
+  height: 100vh;
 }
 
 a.active{
