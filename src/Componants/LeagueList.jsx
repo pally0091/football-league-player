@@ -26,16 +26,16 @@ const LeagueList = () => {
                         data-testid="loader"
                     />
                     :
-                <div className='grid grid-cols-6 gap-3 p-4'>
+                <div className='grid grid-cols-5 gap-3 p-4'>
             {
                 leagues?.map(league => (
                     <div
                         key={league?.idLeague}
-                        className='p-3 bg-teal-200 rounded-lg text-center'
+                        className='p-3 bg-teal-200 rounded-lg text-center shadow-lg shadow-white hover:shadow-none hover:bg-emerald-300 transition-all duration-500'
                     >
                         <h4 className='font-bold text-lg'>{league?.strLeague}</h4>
                         <p className='font-semibold'>Type of league : {league?.strSport}</p>
-                        <Link className='hover:text-blue-600 hover:underline' to={`/teams/${league?.strLeague}`}>Teams in this League</Link>
+                        <Link className='hover:text-blue-600 hover:underline hover:font-bold' to={`/teams/${league?.strLeague}`}>Teams in this League</Link>
                     </div>
                 ))
             }
