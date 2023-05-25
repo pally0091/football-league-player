@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 const LeagueCard = ({league}) => {
     const { strLeague, strGender, strCountry,  strDescriptionEN, strSport, strBadge, strLogo } = league;
     return (
-        <div className='bg-indigo-400 rounded-md shadow-lg shadow-white p-4'>
+        <div>
+            <div className='bg-indigo-400 rounded-md shadow-lg shadow-white p-4'>
             <h3 className='text-2xl font-bold text-center mb-3 italic league-name'>{strLeague}</h3>
             <div className=' flex flex-row items-center'>
                 <div className='w-1/2'>
@@ -19,21 +20,8 @@ const LeagueCard = ({league}) => {
                     <Link className='hover:text-red-600 hover:underline hover:font-bold'  to={`/teams/${strLeague}`}>Teams in this League</Link>
                 </div>
             </div>
-            {/* The button to open modal */}
-            <label htmlFor="my-modal" className="btn btn-outline">More</label>
-
-            {/* Put this part before </body> tag */}
-            <input type="checkbox" id="my-modal" className="modal-toggle" />
-            <div className="modal">
-              <div className="modal-box">
-                    <h3 className="font-bold text-lg">Description about { strLeague}</h3>
-                    <p className="py-4">{ strDescriptionEN}</p>
-                <div className="modal-action">
-                  <label htmlFor="my-modal" className="btn btn-outline">Close</label>
-                </div>
-              </div>
+                
             </div>
-                        {/* <h4 className='text-justify p-2'>{strDescriptionEN}</h4> */}
         </div>
     );
 };
