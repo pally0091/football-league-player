@@ -14,7 +14,7 @@ const CountryList = () => {
       setLoading(false);
     }, 2000);
   }, []);
-    console.log(loading)
+    // console.log(loading)
     // console.log(listLeagues)
     return (
         <div className='text-center'>
@@ -34,7 +34,7 @@ const CountryList = () => {
                             <CountriesCat></CountriesCat>
                         </div>
                         <div>
-                            <h3 className='text-center text-3xl font-semibold'>{listLeagues?.length} Leagues in this Country</h3>
+                            <h3 className='text-center text-sky-200 mt-2 text-3xl font-semibold'>{listLeagues?.length} Leagues in this Country</h3>
                             <div className='mt-5 grid grid-cols-2 gap-3 p-10'>
                                 {listLeagues?.map(league => (
                                     <LeagueCard
