@@ -35,7 +35,7 @@ const LeagueList = () => {
                     >
                         <h4 className='font-bold text-lg'>{league?.strLeague}</h4>
                         <p className='font-semibold'>Type of league : {league?.strSport}</p>
-                        <Link className='hover:text-blue-600 hover:underline hover:font-bold' to={`/teams/${league?.strLeague}`}>Teams in this League</Link>
+                        <Link className='hover:text-blue-600 hover:underline hover:font-bold underline-on-hover' to={`/teams/${league?.strLeague}`}>Teams in this League</Link>
                     </div>
                 ))
             }

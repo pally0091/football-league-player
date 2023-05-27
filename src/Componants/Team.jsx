@@ -11,7 +11,7 @@ const Team = ({ team }) => {
             <h3>Short name : {strTeamShort}</h3>
             <h4>Team formed in : {intFormedYear}</h4>
             <Link to={`/${strCountry}`}>
-                <button className='bg-black text-white py-1 px-3 w-full rounded-full hover:scale-90 transition-all duration-500'>{strCountry}</button>
+                <button className='bg-black text-white py-1 px-3 w-full rounded-full hover:scale-90 transition-all duration-500 '>{strCountry}</button>
             </Link>
             
         </div>

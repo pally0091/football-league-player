@@ -18,7 +18,7 @@ const LeagueCard = ({league}) => {
                         <h4 className='text-lg'>Type :  {strGender}</h4>
                         <h4 className='text-xl font-semibold'>League for : {strCountry}</h4>
                         <h4>{strSport} Team</h4>
-                        <Link className='hover:text-red-600 hover:underline hover:font-bold'  to={`/teams/${strLeague}`}>Teams in this League</Link>
+                        <Link className='hover:text-red-600 hover:font-bold underline-on-hover'  to={`/teams/${strLeague}`}>Teams in this League</Link>
                     </div>
                 </div>
                 {/* <div className="tooltip tooltip-left" data-tip={strDescriptionEN}>
