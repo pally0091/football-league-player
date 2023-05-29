@@ -30,10 +30,6 @@ const LeagueCard = ({league}) => {
                         <p className='text-justify'>{strDescriptionEN}</p>
                     </div>
                 </div>
-                {/* <div className="tooltip tooltip-left" data-tip={strDescriptionEN}>
-                    <button className="btn">Details</button>
-                </div> */}
-                
             </div>
         </div>
     );
