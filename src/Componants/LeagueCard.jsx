@@ -18,7 +18,16 @@ const LeagueCard = ({league}) => {
                         <h4 className='text-lg'>Type :  {strGender}</h4>
                         <h4 className='text-xl font-semibold'>League for : {strCountry}</h4>
                         <h4>{strSport} Team</h4>
-                        <Link className='hover:text-red-600 hover:font-bold underline-on-hover'  to={`/teams/${strLeague}`}>Teams in this League</Link>
+                        <Link className=' hover:font-bold underline-on-hover'  to={`/teams/${strLeague}`}>Teams in this League</Link>
+                    </div>
+                </div>
+                <div className="collapse mt-3">
+                    <input type="checkbox" className="peer" />
+                    <div className="collapse-title bg-primary text-primary-content peer-checked:bg-blue-200 peer-checked:text-black rounded-t-lg">
+                        Details 
+                    </div>
+                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-blue-200 peer-checked:text-black">
+                        <p className='text-justify'>{strDescriptionEN}</p>
                     </div>
                 </div>
                 {/* <div className="tooltip tooltip-left" data-tip={strDescriptionEN}>
