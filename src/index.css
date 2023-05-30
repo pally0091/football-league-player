@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body{
-  background-image: linear-gradient(to left, #044d69, #1a6105, #42006e);
+  background-image: url(./assets/vanishing-stripes.png);
   font-family: 'Crimson Text', serif;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 a.active{
