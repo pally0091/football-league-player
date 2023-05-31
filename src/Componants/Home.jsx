@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 const Home = () => {
-    return (
-        <div className='text-center'>
-            <h3 >Welcome Home</h3>
-            <h2>Where</h2>
-        </div>
-    );
+  return (
+    <div className="text-center text-white">
+      <h3>Welcome Home</h3>
+      <h2>Where</h2>
+    </div>
+  );
 };
 
 export default Home;
