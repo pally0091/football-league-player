@@ -5,7 +5,7 @@
 body{
   background-image: url(./assets/vanishing-stripes.png);
   font-family: 'Crimson Text', serif;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 a.active{
