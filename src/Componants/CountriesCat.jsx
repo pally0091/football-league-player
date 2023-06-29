@@ -21,7 +21,7 @@ const CountriesCat = () => {
   return (
     <div className="relative mx-auto w-64">
       <button
-        className="flex w-64 justify-center items-center px-4 py-2 text-gray-800 bg-gray-200 rounded-md focus:outline-none focus:shadow-outline"
+        className="flex w-64 justify-center items-center px-4 py-2 text-gray-800 bg-gray-200 hover:bg-sky-200 rounded-full text-xl "
         onClick={toggleDropdown}
       >
         Country
@@ -32,7 +32,7 @@ const CountriesCat = () => {
             <Link
               key={country?.name_en}
               to={`/${country?.name_en}`}
-              className="bg-sky-300 mx-2 rounded-full py-1 hover:bg-white"
+              className="bg-sky-300 mx-2 rounded-full py-1 border border-black hover:bg-white transition-all duration-500"
               onClick={toggleDropdown}
             >
               <button className="w-56  mt-2">{country?.name_en}</button>
